@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import StudentForm from './components/StudentForm';
+import StudentList from './components/StudentList';
+import './components/styles/studentProfile.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="student-profile-container">
+      <h2>Student Management ERP</h2>
+      <StudentForm />
+      <StudentList />
     </div>
   );
-}
+};
 
 export default App;
